@@ -11,10 +11,10 @@ void insertion_sort_list(listint_t **list)
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-	temp = *list;
-	while (temp != NULL)
+	for (temp = *list; temp != NULL; temp = next)
 	{
-		movement, go_swap = 0, 0;
+		movement = 0;
+		go_swap = 0;
 		previous = temp->prev;
 		next = temp->next;
 		if (previous != NULL && previous->n > temp->n)
@@ -44,6 +44,5 @@ void insertion_sort_list(listint_t **list)
 				print_list(*list);
 			}
 		}
-		temp = next;
 	}
 }
