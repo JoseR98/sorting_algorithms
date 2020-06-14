@@ -6,11 +6,12 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *previous, *next, *insert_nxt, *temp = *list;
+	listint_t *previous, *next, *insert_nxt, *temp;
 	int movement, go_swap;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
+	temp = *list;
 	while (temp != NULL)
 	{
 		movement = 0;
