@@ -7,7 +7,7 @@
  */
 void shell_sort(int *array, size_t size)
 {
-	unsigned int gap = 0, outer, rigth_val;
+	unsigned int gap = 1, outer, rigth_val;
 	int value_insert;
 
 	if (array == NULL || size < 2)
