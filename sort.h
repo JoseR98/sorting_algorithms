@@ -26,4 +26,5 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void quicksort_low_high(int *array, int low_idx, int high_idx, size_t size);
 int Lotumo_partition(int *array, int low_idx, int high_idx, size_t size);
+void shell_sort(int *array, size_t size);
 #endif
